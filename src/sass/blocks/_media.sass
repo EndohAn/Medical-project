@@ -1,0 +1,137 @@
+@media (max-width: 1439px) 
+    .link__item
+        a
+            font-size: 14px
+    .home
+        background: url(../img/home-banner.webp) no-repeat 57% / cover
+    .about
+        article
+            h2
+                &::after
+                    left: 71%   
+
+@media (max-width: 1025px)
+           
+    .contacts
+        address
+            margin-top: 60px
+            width: 90%
+        &__item
+            text-align: center
+        form
+            .home__button
+                margin-left: 25%
+
+    .services 
+        &__items
+            grid-template: repeat(2, minmax(240px, auto)) / repeat(2, 240px)           
+            justify-content: space-between
+    
+         
+@media (max-width: 992px)
+    .header__contact
+        display: none
+    .contacts
+       form
+        .home__button
+            margin-left: 16%  
+              
+
+@media (max-width: 768px) 
+    .home
+        background: url(../img/home-banner.webp) no-repeat 70% / cover
+  
+    .footer
+        &__links-brand
+            img
+                width: 90px
+        &__links-nav
+            margin-top: 0             
+    .about
+        
+        &__img-container
+            display: none
+           
+       
+
+@media (max-width: 576px)
+    .home
+        background: url(../img/home-banner.webp)
+        .container
+            align-items: center
+        &__description
+            font-size: 28px
+            max-width: 72%
+            padding: 0 20px
+        &__slogan
+            padding: 0 20px
+
+    .services
+        padding-top: 0
+        padding-bottom: 0 
+    .section-title
+        font-size: 23px 
+        margin: 30px  0 
+    .about__description
+        
+        font-size: 14px
+        margin-top: 20px
+    .about
+        &__item
+            font-size: 14px
+            margin-top: 0
+                
+    .contacts 
+        padding-bottom: 10px 
+        &__inner
+            flex-direction: column               
+        &__form
+            max-width: 90%
+            margin-top: 20px
+            margin-right: 0px 
+            &-description
+                font-size: 14px
+            form
+                margin-top: 0
+                .home__button
+                    margin-left: 70px                        
+        address
+            margin-top: 50px
+        &__item
+            text-align: center
+    .services 
+        &__items
+            grid-template-columns: repeat(auto-fit, 220px)        
+    .footer
+        &__item
+            display: block
+        &__links-nav
+            font-size: 12px
+        &__copy-item
+            font-size: 12px
+        &__links-brand
+            img
+                width: 70px    
+@media (max-width: 390px)
+    .home        
+        &__description
+           max-width: 100%
+    .section-title
+        &::after   
+            top: 120px
+    .services
+        padding-top: 48px    
+    .footer
+        &__links-nav
+            font-size: 10px
+            ul              
+                li
+                    width: 100px                   
+                    margin-bottom: 0px
+                    
+        &__copy-item
+            font-size: 10px
+        &__links-brand
+            img
+                width: 50px       
+       

@@ -1,0 +1,65 @@
+.contacts
+    display: block
+    background-image: url(../img/contacts-bg.webp) 
+    position: relative
+    background-position: 0 0
+    background-repeat: no-repeat
+    background-size: cover
+    padding-top: 80px
+    padding-bottom: 80px
+    .container
+        display: flex
+    address
+        width: 100%
+        margin-top: 100px
+        font-style: normal
+    &__inner
+        display: flex        
+        align-items: center
+    &__form
+        max-width: 50%
+        margin-right: 30px
+        form
+            display: flex   
+            flex-direction: column
+            gap: 15px 
+            margin-top: 30px
+            textarea
+                resize: none
+        &-description
+            text-align: justify
+            margin-top: 50px
+    &__item
+        position: relative
+        border-left: 2px solid #4b9db4
+        padding-left: 30px
+        margin-bottom: 60px
+        p
+            color: #9fa1a1
+            a
+                color: #9fa1a1
+        h3
+            display: inline-block
+            font-size: 16px
+            text-transform: uppercase
+            &::after
+                content: ":"
+                position: absolute
+                top: 0
+                right: -6px
+        &::after
+            content: ""
+            position: absolute
+            bottom: -30px
+            right: 0   
+            width: calc(100% - 15px)
+            height: 1px
+            background: #e6e5e5
+        &:last-child
+            &::after
+                display: none
+    &__button
+        @include btn 
+        align-self: center        
+
+
